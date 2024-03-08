@@ -1,0 +1,14 @@
+D:\tarea\programacion\clase1\bin\Debug\net7.0\clase1.exe
+D:\tarea\programacion\clase1\bin\Debug\net7.0\clase1.deps.json
+D:\tarea\programacion\clase1\bin\Debug\net7.0\clase1.runtimeconfig.json
+D:\tarea\programacion\clase1\bin\Debug\net7.0\clase1.dll
+D:\tarea\programacion\clase1\bin\Debug\net7.0\clase1.pdb
+D:\tarea\programacion\clase1\obj\Debug\net7.0\clase1.GeneratedMSBuildEditorConfig.editorconfig
+D:\tarea\programacion\clase1\obj\Debug\net7.0\clase1.AssemblyInfoInputs.cache
+D:\tarea\programacion\clase1\obj\Debug\net7.0\clase1.AssemblyInfo.cs
+D:\tarea\programacion\clase1\obj\Debug\net7.0\clase1.csproj.CoreCompileInputs.cache
+D:\tarea\programacion\clase1\obj\Debug\net7.0\clase1.dll
+D:\tarea\programacion\clase1\obj\Debug\net7.0\refint\clase1.dll
+D:\tarea\programacion\clase1\obj\Debug\net7.0\clase1.pdb
+D:\tarea\programacion\clase1\obj\Debug\net7.0\clase1.genruntimeconfig.cache
+D:\tarea\programacion\clase1\obj\Debug\net7.0\ref\clase1.dll
