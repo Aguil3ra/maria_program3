@@ -6,12 +6,12 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("porfavor ingrese su numero");
-            // int nota = int.Parse(Console.ReadLine());
+            Console.WriteLine("porfavor ingrese su nota");
+            int nota = int.Parse(Console.ReadLine());
 
-            // EvualuarNota(nota);
+            EvualuarNota(nota);
 
-            rotar2();
+            //rotar2();
             
         }
 
@@ -40,9 +40,10 @@ namespace Program
             string numero = Console.ReadLine();
             char primero = numero[0];
             char segundo = numero[1];
+            char tercero = numero[2];
             // char ultimo = numero[numero.Length -1];
-            string resto =numero.Substring(2, numero.Length -2);
-            string resultado = resto + primero + segundo;
+            string resto =numero.Substring(3, numero.Length -3);
+            string resultado = resto + primero + segundo + tercero;
             Console.WriteLine(resultado);
         }
     }

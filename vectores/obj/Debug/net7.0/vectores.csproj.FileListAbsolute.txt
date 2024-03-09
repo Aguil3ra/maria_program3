@@ -1,0 +1,14 @@
+D:\tarea\programacion\vectores\bin\Debug\net7.0\vectores.exe
+D:\tarea\programacion\vectores\bin\Debug\net7.0\vectores.deps.json
+D:\tarea\programacion\vectores\bin\Debug\net7.0\vectores.runtimeconfig.json
+D:\tarea\programacion\vectores\bin\Debug\net7.0\vectores.dll
+D:\tarea\programacion\vectores\bin\Debug\net7.0\vectores.pdb
+D:\tarea\programacion\vectores\obj\Debug\net7.0\vectores.GeneratedMSBuildEditorConfig.editorconfig
+D:\tarea\programacion\vectores\obj\Debug\net7.0\vectores.AssemblyInfoInputs.cache
+D:\tarea\programacion\vectores\obj\Debug\net7.0\vectores.AssemblyInfo.cs
+D:\tarea\programacion\vectores\obj\Debug\net7.0\vectores.csproj.CoreCompileInputs.cache
+D:\tarea\programacion\vectores\obj\Debug\net7.0\vectores.dll
+D:\tarea\programacion\vectores\obj\Debug\net7.0\refint\vectores.dll
+D:\tarea\programacion\vectores\obj\Debug\net7.0\vectores.pdb
+D:\tarea\programacion\vectores\obj\Debug\net7.0\vectores.genruntimeconfig.cache
+D:\tarea\programacion\vectores\obj\Debug\net7.0\ref\vectores.dll
