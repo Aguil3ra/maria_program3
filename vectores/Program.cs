@@ -3,21 +3,63 @@ namespace Program
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
-            //int [] numeros ={1,2,3,4,5,6,7,8};
-           //imprimirVector(numeros);
-
-            //cambiodedatos();
-
-            int [] cambio ={1,2,3,4,5,6,7,8};
-           intercambio(cambio);
+           int [] vector = {2,3,26,9,18,27,5,30};
+           recorrervector(vector);
+        }
+        static void recorrervector(int[] vector)
+        {
+            int nuevoElemento = 10;
+	        int posicion = 1;
+	        for (int i = cambio.Length  - 1; i > posicion; i--)
+	        {
+		        cambio[i] = cambio[i - 1];
+	        }
+	        cambio[posicion] = nuevoElemento;
+	        Console.WriteLine("\nVector despues de la insercion:");
+	        ImprimirVector(Cambio);
+        }
+        
+        static void contarmultiplo(int[] vector)
+        {
+            int multiplo=0;
+           
+            foreach(int elemento in vector)
+            {
+                if ((elemento % 3 )== 0)
+                {
+                    multiplo = multiplo + 1 ;
+                }
+                
+            }
+            Console.WriteLine("los multiplos de 3 en total son: " + multiplo);
+            
+        }
+        static void sumavector(int[] vector)
+        {
+            int par=0;
+            int impar=0;
+            foreach(int elemento in vector)
+            {
+                if ((elemento % 2 )== 0)
+                {
+                    par = par + elemento;
+                }
+                if ((elemento % 2 )== 1)
+                {
+                    impar = impar + elemento;
+                }
+            }
+            Console.WriteLine("suma de pares " + par + ", suma de impares " + impar);
+            
         }
         static void intercambio( int[] cambio)
         {
-            int temp = cambio[3];
-            cambio[3] = cambio[2];
-            cambio[2] = temp;
+            int temp = cambio[5];
+            cambio[5] = cambio[1];
+            cambio[1] = temp;
             Console.WriteLine("\n vector con posiciones intercambiadas");
             imprimirVector(cambio);
         }
@@ -40,20 +82,9 @@ namespace Program
             }
             Console.WriteLine(vectorString);
         }
-          //vectores de numeros
-          //int[] numeros = new int [] {1,2,3,4,5};
-
-          //vectores de letras 
-          //char[] letras = new char[] {"a","b","c","d","e"};
-
-          //vectores de palabras
-          //string[] = new string [] {"hola", "mundo", "es", "genial"}; 
+          
 
         }
-         //generar un vector vacio
-         // int[] vacio =new int[10];
-           // Console.WriteLine("\nVector vacio");
-           // ImprimirVector(vacio); 
-      
+         
     }
 
