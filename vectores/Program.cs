@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 namespace Program
 {
     class Program
@@ -6,20 +7,60 @@ namespace Program
         
         static void Main(string[] args)
         {
-           int [] vector = {2,3,26,9,18,27,5,30};
-           recorrervector(vector);
+           Console.WriteLine("ingrese una oracion cualquiera");
+            string oracion = Console.ReadLine(); 
+            LlenarVectorPalabra(oracion);
+            
+        }
+
+        static void LlenarVectorPalabra(string oracion)
+        {
+            string [] palabras = oracion.Split(' ');
+
+            invertirVector(palabras);
+        }
+
+        static void LlenarVectorString(string palabra)
+        {
+            char[] letras = new char[palabra.Length];
+
+            for (int i = 0; i < palabra.Length; i++)
+            {
+                letras[i] = palabra[i];
+            }
+            Console.WriteLine("El vector llenado con las letras de "+ palabra);
+            imprimirVectorGeneral(letras);
+        }
+    
+
+        //vectores de numeros
+        static void LlenarVector(int cantidad)
+        {
+            int [] vector = new int[cantidad];
+            int numero = 1;
+
+            for(int i = 0; i < cantidad; i++)
+            {
+                while(!esPrimo(numero))
+                {
+                    numero++;
+                }
+                vector[i] = numero;
+                numero++;
+            }
+            imprimirVectorGeneral(vector);
         }
         static void recorrervector(int[] vector)
         {
             int nuevoElemento = 10;
 	        int posicion = 1;
-	        for (int i = cambio.Length  - 1; i > posicion; i--)
+	        for (int i = vector.Length  - 1; i > posicion; i--)
 	        {
-		        cambio[i] = cambio[i - 1];
+		        vector[i] = vector[i - 1];
 	        }
-	        cambio[posicion] = nuevoElemento;
+	        vector[posicion] = nuevoElemento;
 	        Console.WriteLine("\nVector despues de la insercion:");
-	        ImprimirVector(Cambio);
+	        imprimirVector(vector);
         }
         
         static void contarmultiplo(int[] vector)
@@ -82,9 +123,79 @@ namespace Program
             }
             Console.WriteLine(vectorString);
         }
-          
-
+        static bool esPar(int numero)
+        {
+            if((numero % 2)== 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
-         
+
+        static bool esImpar(int numero)
+        {
+            if((numero % 2)== 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        static bool esPrimo(int numero)
+        {
+            if (numero <= 1)
+            {
+                return false;
+            }
+
+            for (int i = 2; i * i <=numero; i++)
+            {
+                if(numero % i == 0)
+                {
+                    return false;
+                }
+
+            }
+            return true;
+        }
+        static void imprimirVectorLetra(char[] vector)
+        {
+            string vectorString = "";
+            foreach(int elemento in vector)
+            {
+                vectorString = vectorString + elemento + " ";
+            }
+            Console.WriteLine(vectorString);
+    
+        }
+
+        static void imprimirVectorGeneral<T>(T[] vector)
+        {
+            foreach(T elemento in vector)
+            {
+                Console.Write(elemento + " ");
+            }
+            Console.WriteLine();
+        }
+
+        static T[] invertirVector<T>(T[] vector)
+        {
+            T[] vectorInvertido = new T[vector.Length];
+
+            for (int i = 0; i < vector.Length; i++)
+            {
+                vectorInvertido[i] = vector[vector.Length - 1 - i];
+            }
+            return vectorInvertido;
+        }
+
     }
+}         
+    
 
